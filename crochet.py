@@ -25,24 +25,24 @@ class CrochetDataVisualizer:
         
         general_product_types = [] # create a list that will become a new column in the dataframe with the more general categories of 
      
-        for item in df.loc[:, 'product type']:
-            item = str(item)
-            if 'top' in item:
+        for item in df.loc[:, 'product type']: # loop through all the items in the product type column and search for substrings to put them in a more general category of product
+            item = str(item)                   # convert item to a string to check for substrings
+            if 'top' in item:                       # if top is in an item then add top to its index in general_product_types
                 general_product_types.append('top')
-            elif 'sweater' in item:
+            elif 'sweater' in item:                 # if sweater is in the item string then add it as top in general_product_types
                 general_product_types.append('top')
-            elif 'hat' in item:
+            elif 'hat' in item:                     # if hat is in the item string add it as hat
                 general_product_types.append('hat')
-            elif 'beanie' in item:
+            elif 'beanie' in item:                  # if beanie is in the item string at it as hat
                 general_product_types.append('hat')
-            elif 'bag' in item:
+            elif 'bag' in item:                     # if bag is in the item string add it as bag
                 general_product_types.append('bag')
-            elif 'pack' in item:
+            elif 'pack' in item:                    # if pack is in the item string add it as bag
                 general_product_types.append('bag')
             else:
-                general_product_types.append('other')
+                general_product_types.append('other') # if none of the above strings appear in an item of 'product types' append 'other' to the general_product_types
         
-        df['general_product_types'] = general_product_types
+        df['general_product_types'] = general_product_types # turn general_product_types into a new column in the data frame
        
         cats = {"who's featured": None, 'product type': None, 'purpose': None, 'season': None}
         for cat in cats:
