@@ -28,10 +28,11 @@ To execute this program,
 ### Scope and Limitations
 (Any ethical implications, accessibility concerns, and ideas for potential extensions)
 This program's scope is 
+
 ### References and Acknowledgment (?)
 
 ### Background of Dataset 
-This data was hand-collected over the course of 3 years 
+This data was hand-collected over the course of 3 years by Nellie Cox. Everytime she created a post on the business account @clarecox.crochet, she hand-recorded all relevant information to describe the post, such as date posted, the type of item featured, likes received, comments, saves, etc. This amounted to a total of 19 recorded variables/columns.
 
 ### Software demo video: 
 Extra credit video demoing use of this program
