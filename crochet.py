@@ -9,47 +9,60 @@ class CrochetDataVisualizer:
         self.df = self.preprocess(df)
     
     def preprocess(self, df):
+        '''
+        Takes in the dataframe that is input. Cleans up data so that it only includes what we plan to be able to work with.
+        Drops unnecessary indexes, makes the dates column into dates python can read and gets rid of additional columns. Gets rid of outiers in the df.
+        Reformats data in columns so that the computer can read it.
+        Args:
+        Clare Cox Crochet dataframe
+        Returns:
+        Clare Cox Crochet dataframe but cleaned up
+        '''
         df.drop(["Unnamed: 0"], axis=1, inplace=True)  # get rid of unnecessary index
         
         df['Date'] = pd.to_datetime(df["Date"])  # make dates
         df.drop(['Day of Week', 'Month', 'Year'], axis=1, inplace=True)  # no longer need this info
         
-        df = df[df["number of pictures in post"] != 'video'].copy()  # get rid of outlier: video
-        df["percent weren't following"] = df["percent weren't following"].replace({'-': '-1', '': '-1'}).astype(np.float64).replace({-1.:np.nan})  # turn percent following column into floats
-        numerify = ["number of pictures in post", 'profile visits', "follows"]
-        df[numerify] = df[numerify].astype(np.int16)
+        df = df[df["number of pictures in post"] != 'video'].copy()            # get rid of outlier: video
+        # turn percent following column into floats
+        df["percent weren't following"] = df["percent weren't following"].replace({'-': '-1', '': '-1'}).astype(np.float64).replace({-1.:np.nan}) 
+        numerify = ["number of pictures in post", 'profile visits', "follows"] # columns whose datatype should be made into numbers put into an array
+        df[numerify] = df[numerify].astype(np.int16)                           # turns appropriate data in the data frame into numbers (int16)
         
-        df["number of days since previous post"] = df['Date'].diff()
+        df["number of days since previous post"] = df['Date'].diff()           # .diff() will get the number of days between each date there was a post
         
-        df["product type"] = df["product type"].fillna("none")
+        df["product type"] = df["product type"].fillna("none")                 # replaces null items in product type to 'none'
         
         general_product_types = [] # create a list that will become a new column in the dataframe with the more general categories of 
-     
-        for item in df.loc[:, 'product type']: # loop through all the items in the product type column and search for substrings to put them in a more general category of product
-            item = str(item)                   # convert item to a string to check for substrings
-            if 'top' in item:                       # if top is in an item then add top to its index in general_product_types
+        
+        # loop through all the items in the product type column and search for substrings to put them in a more general category of product
+        for item in df.loc[:, 'product type']:
+            item = str(item)                          # convert item to a string to check for substrings
+            if 'top' in item:                         # if top is in an item then add top to its index in general_product_types
                 general_product_types.append('top')
-            elif 'sweater' in item:                 # if sweater is in the item string then add it as top in general_product_types
+            elif 'sweater' in item:                   # if sweater is in the item string then add it as top in general_product_types
                 general_product_types.append('top')
-            elif 'hat' in item:                     # if hat is in the item string add it as hat
+            elif 'hat' in item:                       # if hat is in the item string add it as hat
                 general_product_types.append('hat')
-            elif 'beanie' in item:                  # if beanie is in the item string at it as hat
+            elif 'beanie' in item:                    # if beanie is in the item string at it as hat
                 general_product_types.append('hat')
-            elif 'bag' in item:                     # if bag is in the item string add it as bag
+            elif 'bag' in item:                       # if bag is in the item string add it as bag
                 general_product_types.append('bag')
-            elif 'pack' in item:                    # if pack is in the item string add it as bag
+            elif 'pack' in item:                      # if pack is in the item string add it as bag
                 general_product_types.append('bag')
             else:
                 general_product_types.append('other') # if none of the above strings appear in an item of 'product types' append 'other' to the general_product_types
         
-        df['general_product_types'] = general_product_types # turn general_product_types into a new column in the data frame
+        # turn general_product_types into a new column in the data frame
+        df['general_product_types'] = general_product_types 
        
-        cats = {"who's featured": None, 'product type': None, 'purpose': None, 'season': None}
-        for cat in cats:
+        # converts categorical variables into dummies where numbers will correstp
+        cats = {"who's featured": None, 'product type': None, 'purpose': None, 'season': None} # a dict of the categorical variables we want to work with
+        for cat in cats:                                                                       # loops through them and gets the dummies of the variables
             onehot = pd.get_dummies(df[cat])
-            cats[cat] = onehot
+            cats[cat] = onehot                                                                 # replaces the categorical items with the dummies
             
-        df.rename(lambda string: string.replace(" ", "_"), axis=1, inplace=True)
+        df.rename(lambda string: string.replace(" ", "_"), axis=1, inplace=True)               # rename strings in the df and replace spaces with underscores
         
         return df
     
@@ -63,10 +76,10 @@ class CrochetDataVisualizer:
         Raises:
         - KeyError if the column name isn't in self.df
         """
-        for col in cols:
-            try:
+        for col in cols:      # loop through the columns that were input
+            try:              # first try the column
                 self.df[col]
-            except KeyError:
+            except KeyError:  # if there's a KeyError print this
                 raise KeyError(f'"{col}" is not a column in the crochet data')
                 
     def _validate_column_dec(func):
@@ -78,7 +91,7 @@ class CrochetDataVisualizer:
         Returns:
         - the same function with the added validation logic (raises descriptive KeyError when column is not found)
         """
-        @wraps(func)
+        @wraps(func)                   
         def ret_func(self, *pos, **kw):
             self._validate_columns(*pos)
             return func(self, *pos, **kw)
@@ -104,6 +117,14 @@ class CrochetDataVisualizer:
         
     @_validate_column_dec
     def timeline(self, y):
+    '''
+    For creating plots which show how a variable changesover time. creates the x-axis and then calls _validate_column_dec
+    Args:
+    y: a column in the data frame which will be plotted in the y axis
+    Returns:
+    Nothing
+    
+    '''
         plt.scatter(self.df["Date"], self.df[y], color = 'pink')
         plt.xticks(rotation = 90)
         plt.xlabel("Date")
