@@ -1,0 +1,106 @@
+,Date,Day of Week,Month,Year,number of items featured,who's featured,product type,number of pictures in post,likes,comments,saves,shares,impressions,number of days since previous post,season,profile visits,percent weren't following,follows,purpose
+1,8/23/2019,Friday,August,2019,10,customer,mixed,3,89,5,2,0,202,0,summer,3,75,0,opening shop
+2,8/27/2019,Tuesday,August,2019,1,layout,halter top,1,88,2,4,0,242,4,summer,0,72,0,debut
+3,9/2/2019,Monday,September,2019,1,customer,tube top,2,87,4,4,0,203,5,fall,2,72,0,trade
+4,9/6/2019,Friday,September,2019,1,customer,halter top,1,88,0,2,0,259,4,fall,2,72,0,customer
+5,9/9/2019,Monday,September,2019,1,customer,tank top,2,106,1,6,0,302,3,fall,5,74,0,customer
+6,9/18/2019,Wednesday,September,2019,1,customer,scarf,1,92,0,1,1,321,9,fall,9,77,0,customer
+7,9/20/2019,Friday,September,2019,1,customer,tube top,1,108,4,1,0,186,2,fall,2,69,0,customer
+8,9/23/2019,Monday,Septmeber,2019,2,none,embroidery,2,103,4,0,0,134,3,fall,0,65,0,debut
+9,10/1/2019,Tuesday,October,2019,0,none,NA,2,108,6,3,0,130,8,fall,0,67,0,brag
+10,10/8/2019,Tuesday,October,2019,1,customer,halter top,2,109,3,0,0,221,7,fall,1,72,0,trade
+11,10/9/2019,Wednesday,October,2019,2,customer, mixed tops,1,107,1,0,0,189,1,fall,1,73,0,customer
+12,10/19/2019,Monday,October,2019,1,none,heart,10,108,17,2,0,167,10,fall,0,67,0,heart
+13,10/23/2019,Wednesday,October,2019,1,myself,beanie,3,107,11,1,0,158,4,fall,1,64,0,debut
+14,10/27/2019,Sunday,October,2019,1,customer,mini back-pack,2,115,10,0,0,240,4,fall,0,73,0,debut
+15,11/1/2019,Friday,November,2019,6,customer,tank top,8,114,11,3,2,369,5,fall,16,78,0,debut
+16,11/13/2019,Wednesday,November,2019,1,customer,tank top,1,115,11,1,0,170,12,fall,0,68,0,customer
+17,11/17/2019,Sunday,November,2019,2,customer,beanie,7,97,11,0,0,153,4,fall,0,65,0,debut
+18,11/20/2019,Wednesday,November,2019,1,myself,halter top,1,122,3,4,1,164,3,fall,0,69,0,debut
+19,11/24/2019,Sunday,November,2019,1,customer,tank top,1,123,11,0,1,194,4,fall,4,73,0,customer
+20,11/25/2019,Monday,November,2019,0,none,NA,2,109,7,2,0,201,1,fall,1,69,0,brag
+21,12/7/2019,Saturday,December,2019,9,customer,tube top,9,124,15,2,0,287,12,winter,0,70,0,advertise
+22,12/12/2019,Thursday,December,2019,1,customer,tank top,1,138,19,8,1,354,5,winter,7,74,0,customer
+23,12/20/2019,Friday,December,2019,1,myself,blanket,3,135,11,0,0,240,8,winter,0,71,0,debut
+24,12/22/2019,Sunday,December,2019,1,myself,halter top,3,131,11,3,1,245,2,winter,0,74,0,advertise
+25,12/26/2019,Thursday,December,2019,3,none,tote bag,5,122,9,1,1,263,4,winter,1,70,0,debut
+26,1/3/2020,Friday,January,2020,1,myself,dress,3,263,60,12,3,437,7,winter,67,74,5,viral tik tok
+27,1/10/2020,Thursday,January,2020,1,customer,tank top,2,156,14,5,0,368,7,winter,5,71,0,customer
+28,1/13/2020,Monday,January,2020,1,customer,tank top,1,149,14,0,0,239,3,winter,0,66,0,customer
+29,1/18/2020,Saturday,January,2020,1,layout,beanie,2,201,12,7,0,283,5,winter,1,69,0,pattern test
+30,1/21/2020,Tuesday,January,2020,1,customer,tank top,1,153,12,5,2,315,3,winter,6,76,1,customer
+31,1/30/2020,Thursday,January,2020,1,myself,halter top,4,182,16,3,0,335,9,winter,2,74,0,debut
+32,2/7/2020,Friday,February,2020,2,myself,tank top,2,225,9,16,0,327,8,winter,1,72,0,sale
+33,3/14/2020,Saturday,March,2020,7,myself,mixed,7,178,6,1,0,1431,35,spring,25,63,0,advertise
+34,3/18/2020,Wednesday,March,2020,1,none,decor,2,221,19,2,1,2757,4,spring,14,79,0,brag
+35,4/1/2020,Wednesday,April,2020,1,myself,tank top,1,265,15,12,8,3334,14,spring,171,84,2,sale
+36,4/4/2020,Saturday,April,2020,1,myself,sleeved top,2,169,18,5,2,1516,3,spring,27,62,0,debut
+37,4/12/2020,Sunday,April,2020,1,customer,halter top,2,154,19,0,0,1486,8,spring,23,59,0,customer
+38,4/18/2020,Saturday,April,2020,1,customer,tank top,1,253,18,8,0,3725,6,spring,58,86,5,customer
+39,4/28/2020,Tuesday,April,2020,1,customer,tank top,2,253,29,5,12,2865,10,spring,147,79,4,customer
+40,5/6/2020,Wednesday,May,2020,1,customer,tank top,1,239,39,18,1,2739,8,spring,83,82,6,customer
+41,5/7/2020,Thursday,May,2020,0,none,NA,1,209,34,5,2,3568,1,spring,71,87,5,brag
+42,5/10/2020,Sunday,May,2020,2,myself,mini backpack,3,206,9,2,6,2173,3,spring,20,78,1,advertise
+43,5/15/2020,Friday,May,2020,1,customer,tank top,1,182,20,3,15,2483,5,spring,129,80,5,customer
+44,5/19/2020,Tuesday,May,2020,1,customer,tank top,2,214,35,2,0,1799,4,spring,36,72,1,customer
+45,5/27/2020,Wednesday,May,2020,1,customer,halter top,1,140,8,2,4,1645,8,spring,18,72,0,customer
+46,6/3/2020,Wednesday,June,2020,0,none,NA,2,147,3,1,2,1352,7,summer,43,63,0,sale
+47,6/8/2020,Monday,June,2020,1,myself,tank top,3,200,25,5,30,1983,5,summer,45,74,0,debut
+48,6/30/2020,Tuesday,June,2020,1,myself,tank top,2,236,43,24,13,2287,22,summer,24,45,3,debut
+49,7/23/2020,Thursday,July,2020,2,myself,shorts,2,183,24,3,12,1592,23,summer,19,62,0,debut
+50,7/28/2020,Tuesday,July,2020,1,customer,tank top,1,159,16,1,0,2536,5,summer,37,80,0,customer
+51,8/8/2020,Saturday,August,2020,1,customer,tank top,1,201,2,4,2,3648,11,summer,33,89,1,customer
+52,9/25/2020,Friday,September,2020,1,customer,sweater,1,120,20,0,1,1322,47,fall,28,59,2,customer
+53,10/10/2020,Saturday,October,2020,1,customer,tank top,1,117,13,0,0,1544,15,fall,20,65,3,customer
+54,10/14/2020,Wednesday,October,2020,1,myself,tank top,2,209,26,7,3,1899,4,fall,94,64,3,debut
+55,10/20/2020,Tuesday,October,2020,1,none,plush,3,176,20,5,18,1763,6,fall,58,62,3,debut
+56,1/8/2021,Friday,January,2021,1,myself,sweater,4,207,29,8,8,1192,80,winter,62,49,3,debut
+57,1/27/2021,Wednesday,January,2021,1,layout,halter top,2,145,10,1,2,933,19,winter,44,42,0,advertise
+58,2/2/2021,Tuesday,February,2021,1,layout,sleeved top,2,112,7,4,1,959,6,winter,17,42,1,advertise
+59,2/9/2021,Tuesday,February,2021,1,myself,avatar themed,2,158,15,4,3,1052,7,winter,22,47,0,collection
+60,2/12/2021,Friday,February,2021,2,none,avatar themed,4,129,12,2,0,984,3,winter,11,47,0,collection
+61,2/15/2021,Monday,February,2021,1,layout,avatar themed,3,113,5,3,1,898,3,winter,11,44,0,collection
+62,2/26/2021,Friday,February,2021,1,layout,avatar themed,3,118,13,2,3,1182,11,winter,50,56,1,collection
+63,3/22/2021,Monday,March,2021,1,myself,tank top,2,156,7,5,3,1256,24,spring,68,56,2,sale
+64,3/28/2021,Sunday,March,2021,7,layout,tank top,6,103,7,1,2,1285,6,spring,12,59,0,advertise
+65,4/23/2021,Friday,April,2021,1,myself,tiny top,1,154,9,7,5,1679,24,spring,33,65,8,debut
+66,7/17/2021,Saturday,July,2021,1,myself,bikini,1,149,11,8,2,2178,85,summer,91,75,0,debut
+67,8/16/2021,Monday,August,2021,1,myself,tank top,1,136,3,3,1,1639,32,summer,36,70,0,advertise
+68,9/21/2021,Tuesday,September,2021,3,none,decor,2,120,15,1,0,1400,35,fall,40,67,2,brag
+69,9/24/2021,Friday,September,2021,6,layout,hair accessories,4,100,11,2,1,842,3,fall,22,40,2,advertise
+70,9/26/2021,Sunday,September,2021,0,none,decor,5,82,9,3,0,830,2,fall,7,49,0,brag
+71,10/9/2021,Saturday,October,2021,3,layout,vest,4,78,6,3,0,1177,13,fall,34,61,2,advertise
+72,10/16/2021,Saturday,October,2021,1,myself,dress,4,200,28,6,5,2776,7,fall,123,74,6,promoted
+73,12/2/2021,Wednesday,December,2021,1,myself,beer can hat,2,134,12,1,6,1121,45,winter,42,56,2,debut
+74,1/26/2022,Wednesday,January,2022,1,myself,sweater,3,140,15,1,3,725,57,winter,79,30,2,debut
+75,2/1/2022,Tuesday,February,2022,6,myself,mixed,1,94,5,1,3,1343,6,winter,0,0,0,brag
+76,2/3/2022,Thursday,February,2022,1,myself,sweater,3,106,13,0,6,574,2,winter,26,26,0,style
+77,2/6/2022,Sunday,February,2022,1,layout,animal hat,1,57,3,1,4,378,3,winter,25,22,0,debut
+78,2/14/2022,Monday,February,2022,3,customer,heart bag,5,99,5,0,7,690,8,winter,26,52,2,debut
+79,2/18/2022,Friday,February,2022,3,customer,heart bag,3,106,2,4,7,760,4,winter,56,52,0,advertise
+80,2/27/2022,Sunday,February,2022,1,myself,tank top,3,69,10,1,5,766,9,winter,33,56,0,style
+81,3/5/2022,Saturday,March,2022,1,myself,tank top,1,54,3,3,14,1623,6,spring,117,70,6,promoted
+82,3/13/2022,Sunday,March,2022,1,myself,wrap top,3,111,10,10,3,584,8,spring,45,33,4,debut
+83,3/20/2022,Sunday,March,2022,7,none,animal hat,7,84,4,5,14,587,7,spring,44,44,6,debut
+84,3/25/2022,Friday,March,2022,3,myself,tiny top,3,93,2,1,3,522,5,spring,56,24,2,debut
+85,4/18/2022,Monday,April,2022,1,layout,animal hat,2,90,4,3,11,636,24,spring,17,34,6,advertise
+86,4/25/2022,Monday,April,2022,1,myself,dress,4,77,9,2,2,621,7,spring,30,31,2,brag
+87,5/10/2022,Tuesday,May,2022,2,layout,beer can hat,2,128,48,3,37,1198,15,spring,175,-,28,giveaway
+88,5/24/2022,Tuesday,May,2022,6,myself,mixed,video,178,1,11,2,2499,14,spring,-,-,-,reel
+89,5/29/2022,Sunday,May,2022,1,layout,animal hat,2,82,3,1,5,2199,5,spring,36,-,0,debut
+90,6/3/2022,Friday,June,2022,1,myself,halter top,3,90,9,3,3,1013,5,summer,31,,0,advertise
+91,6/5/2022,Sunday,June,2022,3,customer,tiny top,3,134,16,3,6,1379,2,summer,70,,0,pride
+92,6/14/2022,Tuesday,June,2022,1,myself,tiny top,3,99,4,1,4,810,9,summer,37,,2,pattern test
+93,6/15/2022,Wednesday,June,2022,1,graphic,pattern,1,40,2,5,12,715,1,summer,22,,28,pattern tester call
+94,6/20/2022,Monday,June,2022,1,myself,set,2,61,2,2,1,682,5,summer,19,,0,advertise
+95,7/4/2022,Monday,July,2022,1,graphic,plush,2,162,1,10,19,1809,14,summer,36,,2,fundraiser
+96,7/9/2022,Saturday,July,2022,6,layout,animal hat,6,50,5,2,2,737,5,summer,6,,0,advertise
+97,7/11/2022,Monday,July,2022,1,graphic,pattern,1,38,2,7,9,494,2,summer,10,,2,advertise
+98,7/15/2022,Friday,July,2022,1,heart,heart,3,50,3,1,2,545,4,summer,6,,2,brag
+99,7/21/2022,Thursday,July,2022,1,myself,produce bag,3,68,5,2,8,632,6,summer,12,,0,debut
+100,7/21/2022,Thursday,July,2022,1,heart,heart,4,41,4,0,2,464,0,summer,6,,1,brag
+101,7/28/2022,Thursday,July,2022,1,customer,produce bag,3,62,6,0,2,644,7,summer,13,,0,advertise
+102,7/31/2022,Sunday,July,2022,1,heart,heart,6,58,3,1,2,603,3,summer,8,,0,brag
+103,8/4/2022,Thursday,August,2022,1,customer,tank top,4,52,0,0,4,539,4,summer,30,,0,advertise
+104,9/9/2022,Friday,September,2022,1,myself,drink holder,1,37,3,0,0,476,36,fall,2,,0,advertise
+105,11/10/2022,Thursday,November,2022,1,myself,sweater,5,101,7,6,0,1515,62,fall,8,,0,advertise
