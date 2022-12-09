@@ -3,7 +3,7 @@
 ## Group members: @ubpollack, @nimdseshadri, @clarenellie
 
 ### Project Description
-In this project, we created a data visualizer tool that takes in user input to first select a type of visualization and has the user to input the variables which will be plottef on the chosen visualization. We constructed this program/tool around data from one of our members Nellie's small crochet business on instagram, in which she had recorded the relevant variables of each post she created from over 3 years ago.
+In this project, we created a data visualizer tool that takes in user input to first select a type of visualization and has the user to input the variables which will be plotted on the chosen visualization. We constructed this program/tool around data from one of our members Nellie's small crochet business on instagram, in which she had recorded the relevant variables of each post she created from over 3 years ago.
 
 ### Packages + Versions Used
 The following packages were employed to complete this project:
