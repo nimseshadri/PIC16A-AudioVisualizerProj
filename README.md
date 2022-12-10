@@ -10,7 +10,7 @@ The following packages were employed to complete this project:
 - pandas 1.4.2
 - numpy 1.23.5
 - matplotlib 3.5.1
-- functools
+- functools 3.9
 
 ### Demo File Instructions
 (How to run it, expected outputs, and any explanations/interpretations of the results + 2 figures of visualizations w/ titles, captions, and sufficient explanation in text here)
@@ -21,7 +21,8 @@ Each vizualization can either take one or two variables (defined as the column n
 - The timeline takes 1 variable argument and plots it's behavior over the recorded years
 - The histogram can take 2 variable arguments, ideally of categorical nature
 - The boxplot takes 2 variable arguments, it
-Though there are ideal variables to be used in each kind of visualizarion, there are many instances in which the plotter will run and create a visually unappealing graph; there are simply too many combinations of column variables which woulc
+
+Though there are ideal variables to be used in each kind of visualization, there are many instances in which the plotter program will execute and create a visually unappealing graph. Many combinations of column variables will plot without error despite not being intended for that type of , which can be either undersirable or entertaining. 
 
 To execute this program, 
 
