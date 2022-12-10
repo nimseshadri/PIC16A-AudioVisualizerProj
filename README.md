@@ -35,6 +35,7 @@ This program has a limited scope as it was specifically designed to be able to w
 
 ### References and Acknoledgement 
  - User input tutorial: https://pynative.com/python-input-function-get-user-input/
+ - Decorator documentation: https://peps.python.org/pep-0318/
  - Dataset credit and ownership goes to Nellie Cox, @clarenellie
 
 ### Background of Dataset 
@@ -42,5 +43,3 @@ This data was hand-collected over the course of 3 years by Nellie Cox. Everytime
 
 ### Software demo video: 
 Extra credit video demoing use of this program
-
-
