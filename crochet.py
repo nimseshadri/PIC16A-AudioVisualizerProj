@@ -196,11 +196,27 @@ class CrochetDataVisualizer:
 input_sym = "> "
 
 def print_colnames(viz):
+    '''
+    Prints the column names for the input to choose from
+    Args:
+        - viz:
+    Returns:
+        - None
+
+    '''
     print("Here are the column names:")
     for name in viz.df.columns:
         print(name)
 
 def runner(viz, func):
+    '''
+    
+    Args:
+        - viz:
+        - func:
+    Returns:
+        - 
+    '''
     print("Choose some column names (case sensitive). Enter 1-2 inputs, separate with spaces. Inputs correspond to (x,y) respectively. ")
     while True:
         try:
@@ -212,6 +228,13 @@ def runner(viz, func):
             print_colnames(viz)
     
 def main():
+    '''
+    Function to execute the data vizualization tool 
+    Args:
+        - None
+    Returns:
+        - None
+    '''
     dataviz = CrochetDataVisualizer(pd.read_csv("Clare Cox Crochet Social Media Data - Instagram Data.csv"))
     
     welcome = """
@@ -228,6 +251,7 @@ def main():
     }
     
     print(welcome)
+    
     while True:
         print("0.\tquit")
         for num, func in menu.items():
