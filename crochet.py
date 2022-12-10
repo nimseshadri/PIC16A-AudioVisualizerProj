@@ -19,11 +19,11 @@ class CrochetDataVisualizer:
         numerify = ["number of pictures in post", 'profile visits', "follows"]
         df[numerify] = df[numerify].astype(np.int16)
         
-        df["number of days since previous post"] = df['Date'].diff()
+        df["number of days since previous post"] = df['Date'].diff() # converts a
         
-        df["product type"] = df["product type"].fillna("none")
+        df["product type"] = df["product type"].fillna("none") # fills missing values 
         
-        general_product_types = [] # create a list that will become a new column in the dataframe with the more general categories of 
+        general_product_types = [] # create a list that will become a new column in the dataframe with the more general categories of products posted about
      
         for item in df.loc[:, 'product type']:
             item = str(item)
@@ -42,14 +42,14 @@ class CrochetDataVisualizer:
             else:
                 general_product_types.append('other')
         
-        df['general_product_types'] = general_product_types
+        df['general_product_types'] = general_product_types # adds column to df 
        
-        cats = {"who's featured": None, 'product type': None, 'purpose': None, 'season': None}
+        cats = {"who's featured": None, 'product type': None, 'purpose': None, 'season': None} # dummy codes the df 
         for cat in cats:
             onehot = pd.get_dummies(df[cat])
             cats[cat] = onehot
             
-        df.rename(lambda string: string.replace(" ", "_"), axis=1, inplace=True)
+        df.rename(lambda string: string.replace(" ", "_"), axis=1, inplace=True) # replaces the spaces with _ in column names
         
         return df
     
@@ -63,28 +63,28 @@ class CrochetDataVisualizer:
         Raises:
         - KeyError if the column name isn't in self.df
         """
-        for col in cols:
+        for col in cols: # goes thru column names to check if name entered is valid 
             try:
                 self.df[col]
-            except KeyError:
+            except KeyError: # if not, raise a KeyError
                 raise KeyError(f'"{col}" is not a column in the crochet data')
                 
-    def _validate_column_dec(func):
+    def validate_column_dec(func):
         """
         Decorator that checks to make sure the positional arguments of a method are column names of self.df
         Used for plot methods below, because these only accept column names as positional arguments
         Args:
         - func: a method of CrochetDataVisualizer that should only accept column names as positional arguments
         Returns:
-        - the same function with the added validation logic (raises descriptive KeyError when column is not found)
+        - the same function with the new validation logic (raises descriptive KeyError when column is not found)
         """
-        @wraps(func)
-        def ret_func(self, *pos, **kw):
+        @wraps(func) 
+        def ret_func(self, *pos, **kw): # creates a function that can be applied to the 
             self._validate_columns(*pos)
             return func(self, *pos, **kw)
         return ret_func
         
-    @_validate_column_dec
+    @validate_column_dec
     def scatterplot(self, x, y):
         """
         Creates a scatterplot
@@ -102,7 +102,7 @@ class CrochetDataVisualizer:
         plt.title(x + " vs. " + y) # gives graph title 
         plt.show() # displays graph
         
-    @_validate_column_dec
+    @validate_column_dec
     def timeline(self, y):
         """
         Creates a timeline
@@ -120,7 +120,7 @@ class CrochetDataVisualizer:
         plt.ylabel(y) # labels y-axis with y column name
         plt.show() # displays graph
         
-    @_validate_column_dec
+    @validate_column_dec
     def histogram(self, *xs):
         """
         Creates a histogram
@@ -137,7 +137,7 @@ class CrochetDataVisualizer:
         plt.legend() # creates a legend indicating which bar on the graph corresponds to which collection of data
         plt.show() # shows graph
     
-    @_validate_column_dec
+    @validate_column_dec
     def boxplot(self, y, groups=None):
         """
         Creates a boxplot
@@ -159,7 +159,7 @@ class CrochetDataVisualizer:
         plt.title(y + " data summary") # gives graph title
         plt.show() # shows plot
         
-    @_validate_column_dec
+    @validate_column_dec
     def barplot(self, x, y):
         """
         Creates a boxplot
