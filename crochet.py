@@ -25,8 +25,8 @@ class CrochetDataVisualizer:
         '''
         df.drop(["Unnamed: 0"], axis=1, inplace=True)  # get rid of unnecessary index
         
-        df['Date'] = pd.to_datetime(df["Date"])  # make dates
-        df.drop(['Day of Week', 'Month', 'Year'], axis=1, inplace=True)  # no longer need this info
+        df['Date'] = pd.to_datetime(df["Date"])  # creates the dates
+        df.drop(['Day of Week', 'Month', 'Year'], axis=1, inplace=True)  # no longer need this info since dates are calculated
         
         df = df[df["number of pictures in post"] != 'video'].copy()  # get rid of outlier: video
         df["percent weren't following"] = df["percent weren't following"].replace({'-': '-1', '': '-1'}).astype(np.float64).replace({-1.:np.nan})  # turn percent following column into floats
