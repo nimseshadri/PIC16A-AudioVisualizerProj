@@ -31,16 +31,14 @@ To execute this program, all that needs to be done is first import the .py file 
 
 ### Scope and Limitations
 (Any ethical implications, accessibility concerns, and ideas for potential extensions)
-This program has a limited scope as it was specifically designed to be able to work with a single dataframe which was provided by group member 
-@clarenellie. The program is able to analyze social media data for a microbusiness which sells and posts about crochet items. The program will not provide
-very specific insights for an individuals personal account but it may do a good job for data from another business account, assuming the dataframe is 
-formatted the same as the Clare Cox Crochet Social Media dataframe the program was designed for.
+This program has a limited scope as it was specifically designed to be able to work with a single dataframe which was provided by group member @clarenellie. The program is able to analyze social media data for a microbusiness which sells and posts about crochet items. The program will not provide very specific insights for an individuals personal account but it may do a good job for data from another business account, assuming the dataframe is formatted the same as the Clare Cox Crochet Social Media dataframe the program was designed for.
 
-### References and Acknowledgment (?)
+### References and Acknoledgement 
+ - User input tutorial: https://pynative.com/python-input-function-get-user-input/#h-python-input-vs-raw_input
+ - Dataset credit and ownership goes to Nellie Cox, @clarenellie
 
 ### Background of Dataset 
-This data was hand-collected over the course of 3 years by Nellie Cox. Everytime she created a post on the business account @clarecox.crochet, she hand-recorded all relevant information to describe the post, such as date posted, the type of item featured, likes received, comments, saves, etc. 
-This amounted to a total of 19 recorded variables/columns, which turned into 17 possible variables within the scope of this program after servicing the data. 
+This data was hand-collected over the course of 3 years by Nellie Cox. Everytime she created a post on the business account @clarecox.crochet, she hand-recorded all relevant information to describe the post, such as date posted, the type of item featured, likes received, comments, saves, etc. This amounted to a total of 19 recorded variables/columns, which turned into 17 possible variables within the scope of this program after servicing the data. 
 
 ### Software demo video: 
 Extra credit video demoing use of this program
