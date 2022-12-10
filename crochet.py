@@ -241,6 +241,7 @@ def main():
     Choose a number from this menu:
     """
     
+    # creates dictionary to call and run each visualization method 
     menu = {
         1: dataviz.scatterplot,
         2: dataviz.timeline,
@@ -249,31 +250,33 @@ def main():
         5: dataviz.barplot
     }
     
-    print(welcome)
+    print(welcome) # first print the welcome message 
     
-    while True:
-        print("0.\tquit")
-        for num, func in menu.items():
+    while True: # while loop to execute the program
+        print("0.\tquit") # print option to exit program by entering 0
+        for num, func in menu.items(): # prints the choices for visualizations 
             print(f"{num}.\t{func.__name__}")
         
-        try:
-            user_num = int(input(input_sym))
+        # exception handling user input for choosing the visualization type
+        try: 
+            user_num = int(input(input_sym)) # try the number in case it matches the menu
         except ValueError:
-            print("Please enter valid input")
+            print("Please enter valid input") # except the error and reprompt
             continue
         
         if user_num == 0:
-            print("Quitting plotter...")
+            print("Quitting plotter...") # terminates the loop if user wants to exit program
             return
         
+        # exception handling in case number doesn't match a viz method in menu
         try:
-            func = menu[user_num]
+            func = menu[user_num] # if so, call the method
         except KeyError:
-            print("Please enter valid input")
+            print("Please enter valid input") # if not, except the mistake and reprompt
             continue
             
-        runner(dataviz, func)
+        runner(dataviz, func) # deploys the method to grab the input column names (if valid) and use the visualization methods
 
 
-if __name__ == '__main__':
+if __name__ == '__main__': # runs the program if the main function is called 
     main()
