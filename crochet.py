@@ -204,13 +204,12 @@ def print_colnames(viz):
         - None
 
     '''
-    print("Here are the column names:")
     for name in viz.df.columns:
         print(name)
 
 def runner(viz, func):
     '''
-    
+    Function to run the 
     Args:
         - viz:
         - func:
