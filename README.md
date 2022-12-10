@@ -27,7 +27,7 @@ To specify,
 
 Though there are ideal variables to be used in each kind of visualization, there are many instances in which the plotter program will execute and create a visually unappealing graph. Many combinations of column variables will plot without error despite not being intended to visualize that type of relationship, which can be either undersirable or entertaining depending on the intent for the program. 
 
-To execute this program, 
+To execute this program, all that needs to be done is first import the .py file containing the code with command 'import crochet' and then call the main function with '.' method notation: 'crochet.main()'; this will then initiate the program and cause the welcome prompt to appear. 
 
 ### Scope and Limitations
 (Any ethical implications, accessibility concerns, and ideas for potential extensions)
