@@ -5,10 +5,24 @@ from functools import wraps
 
 
 class CrochetDataVisualizer:
+    '''
+    A class which bundles the cleaning and treatment of a dataset 
+    containing post statistics, plus the methods for creating 5 
+    different visualizations for the user's desired variables from the df. 
+    
+    '''
     def __init__(self, df):
         self.df = self.preprocess(df)
     
     def preprocess(self, df):
+        '''
+        Cleans the dataframe by sorting variables, fixing mistakes,  
+        & other preliminary tasks to prepare the data to be plotted.
+        Args:
+            - df: the original dataframe containing the Instagram data  
+        Returns:
+            - df: the cleaned dataframe ready to be read
+        '''
         df.drop(["Unnamed: 0"], axis=1, inplace=True)  # get rid of unnecessary index
         
         df['Date'] = pd.to_datetime(df["Date"])  # make dates
@@ -44,10 +58,10 @@ class CrochetDataVisualizer:
         
         df['general_product_types'] = general_product_types # adds column to df 
        
-        cats = {"who's featured": None, 'product type': None, 'purpose': None, 'season': None} # dummy codes the df 
-        for cat in cats:
+        categoriess = {"who's featured": None, 'product type': None, 'purpose': None, 'season': None} # dummy codes the df for 
+        for cat in categories:
             onehot = pd.get_dummies(df[cat])
-            cats[cat] = onehot
+            categories[cat] = onehot
             
         df.rename(lambda string: string.replace(" ", "_"), axis=1, inplace=True) # replaces the spaces with _ in column names
         
@@ -57,11 +71,11 @@ class CrochetDataVisualizer:
         """
         Validates column names
         Args:
-        - *cols: every positional argument should be a column name
+            - *cols: every positional argument should be a column name
         Returns:
-        - None
+            - None
         Raises:
-        - KeyError if the column name isn't in self.df
+            - KeyError if the column name isn't in self.df
         """
         for col in cols: # goes thru column names to check if name entered is valid 
             try:
@@ -74,13 +88,13 @@ class CrochetDataVisualizer:
         Decorator that checks to make sure the positional arguments of a method are column names of self.df
         Used for plot methods below, because these only accept column names as positional arguments
         Args:
-        - func: a method of CrochetDataVisualizer that should only accept column names as positional arguments
+            - func: a method of CrochetDataVisualizer that should only accept column names as positional arguments
         Returns:
-        - the same function with the new validation logic (raises descriptive KeyError when column is not found)
+            - the same function with the new validation logic (raises descriptive KeyError when column is not found)
         """
         @wraps(func) 
-        def ret_func(self, *pos, **kw): # creates a function that can be applied to the 
-            self._validate_columns(*pos)
+        def ret_func(self, *pos, **kw): # creates a function that can be applied to each plotting method 
+            self._validate_columns(*pos) 
             return func(self, *pos, **kw)
         return ret_func
         
@@ -89,12 +103,12 @@ class CrochetDataVisualizer:
         """
         Creates a scatterplot
         Args:
-        - x: column name
-        - y: column name
+            - x: column name
+            - y: column name
         Returns:
-        - None
+            - None
         Displays:
-        - scatterplot of x vs y
+            - scatterplot of x vs y
         """
         plt.scatter(self.df[x], self.df[y], color = 'pink') # creates a scatter plot of data for inputted columns, makes plotted dot colors pink
         plt.xlabel(x) # labels x-axis with x column name
@@ -107,11 +121,11 @@ class CrochetDataVisualizer:
         """
         Creates a timeline
         Args:
-        - y: column name
+            - y: column name
         Returns:
-        - None
+            - None
         Displays:
-        - timeline of y overtime
+            - timeline of y overtime
         """
         plt.scatter(self.df["Date"], self.df[y], color = 'pink') # creates a scattered image of Date vs inputted y data, makes plotted dot colors pink
         plt.xticks(rotation = 90) # x-axis ticks of dates are written out at a 90 deg angle
@@ -125,11 +139,11 @@ class CrochetDataVisualizer:
         """
         Creates a histogram
         Args:
-        - x: column names
+            - x: column names
         Returns:
-        - None
+            - None
         Displays:
-        - historgram of frequncy of inputted data
+            - historgram of frequncy of inputted data
         """
         for x in xs:
             plt.hist(self.df[x], alpha=0.5, label=x) # create histogram with frequency of inputted data, gives graph bars transparency of 0.5 and labels axis with x inputted data
@@ -142,11 +156,11 @@ class CrochetDataVisualizer:
         """
         Creates a boxplot
         Args:
-        - y: column name
+            - y: column name
         Returns:
-        - None
+            - None
         Displays:
-        - a boxplot with minimum, first quartile, median, third quartile, and maximum of inputted data
+            - a boxplot with minimum, first quartile, median, third quartile, and maximum of inputted data
         """
         if groups is not None: # groups data that is not included in preprocessing code
             self._validate_columns(groups) 
@@ -164,12 +178,12 @@ class CrochetDataVisualizer:
         """
         Creates a boxplot
         Args:
-        - x: column name 
-        - y: column name 
+            - x: column name 
+            - y: column name 
         Returns:
-        - None
+            - None
         Displays:
-        - a barplot of x vs y
+            - a barplot of x vs y
         """
         plt.bar(self.df[x], self.df[y], color = 'pink') # creates a scatter plot of data for inputted columns, makes plotted dot colors pink
         plt.xticks(rotation = 90) # x-axis ticks of dates are written out at a 90 deg angle
