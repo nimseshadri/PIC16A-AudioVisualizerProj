@@ -58,7 +58,7 @@ class CrochetDataVisualizer:
         
         df['general_product_types'] = general_product_types # adds column to df 
        
-        categoriess = {"who's featured": None, 'product type': None, 'purpose': None, 'season': None} # dummy codes the df for 
+        categories = {"who's featured": None, 'product type': None, 'purpose': None, 'season': None} # dummy codes the df for 
         for cat in categories:
             onehot = pd.get_dummies(df[cat])
             categories[cat] = onehot
