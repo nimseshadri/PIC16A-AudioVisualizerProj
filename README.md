@@ -34,7 +34,7 @@ To execute this program, all that needs to be done is first import the .py file 
 This program has a limited scope as it was specifically designed to be able to work with a single dataframe which was provided by group member @clarenellie. The program is able to analyze social media data for a microbusiness which sells and posts about crochet items. The program will not provide very specific insights for an individuals personal account but it may do a good job for data from another business account, assuming the dataframe is formatted the same as the Clare Cox Crochet Social Media dataframe the program was designed for.
 
 ### References and Acknoledgement 
- - User input tutorial: https://pynative.com/python-input-function-get-user-input/#h-python-input-vs-raw_input
+ - User input tutorial: https://pynative.com/python-input-function-get-user-input/
  - Dataset credit and ownership goes to Nellie Cox, @clarenellie
 
 ### Background of Dataset 
