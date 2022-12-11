@@ -12,7 +12,7 @@ class CrochetDataVisualizer:
     
     '''
     def __init__(self, df):
-        self.df = self.preprocess(df)
+        self.df = self.preprocess(df) # instance of the dataframe that will be referenced from then
     
     def preprocess(self, df):
         '''
@@ -199,7 +199,7 @@ def print_colnames(viz):
     '''
     Prints the column names for the input to choose from
     Args:
-        - viz:
+        - viz: 
     Returns:
         - None
 
@@ -212,7 +212,7 @@ def runner(viz, func):
     Function to run the 
     Args:
         - viz:
-        - func:
+        - func: the method of CrochetDataVisualizer only accepts col names 
     Returns:
         - 
     '''
