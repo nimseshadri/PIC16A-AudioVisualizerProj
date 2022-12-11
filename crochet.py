@@ -236,7 +236,7 @@ def main():
     Returns:
         - None
     '''
-    # creates the instance 
+    # stores the application of the class to the dataset 
     dataviz = CrochetDataVisualizer(pd.read_csv("Clare Cox Crochet Social Media Data - Instagram Data.csv")) 
     
     # creates welcome message
