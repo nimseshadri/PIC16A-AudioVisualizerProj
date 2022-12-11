@@ -30,10 +30,12 @@ Though there are ideal variables to be used in each kind of visualization, there
 To execute this program, all that needs to be done is first import the .py file containing the code with command 'import crochet' and then call the main function with '.' method notation: 'crochet.main()'; this will then initiate the program and cause the welcome prompt to appear. 
 
 ### Scope and Limitations
-(Any ethical implications, accessibility concerns, and ideas for potential extensions)
-This program has a limited scope as it was specifically designed to be able to work with a single dataframe which was provided by group member @clarenellie. The program is able to analyze social media data for a microbusiness which sells and posts about crochet items. The program will not provide very specific insights for an individuals personal account but it may do a good job for data from another business account, assuming the dataframe is formatted the same as the Clare Cox Crochet Social Media dataframe the program was designed for.
+This program has a limited scope as it was specifically designed to be able to work with a single dataframe which was provided by group member @clarenellie. The program is able to analyze social media data for a microbusiness which sells and posts about crochet items. The program will not provide very specific insights for an individuals personal account but it may do a good job for data from another business account, assuming the dataframe is formatted the same as the Clare Cox Crochet Social Media dataframe the program was designed for. 
+
+Additionally, this tool is intended to observe relationships in the data recorded, rather than concretely make conclusions about causality. Possible extensions for the program: creating and implementing a class ot fit the best model for the inputted variables, functions to display statistical calculations (e.g., correlation coefficient).  
 
 ### References and Acknoledgement 
+The following links were referenced to inform coding the implementation of the topic each covered 
  - User input tutorial: https://pynative.com/python-input-function-get-user-input/
  - Decorator documentation: https://peps.python.org/pep-0318/
  - Dataset credit and ownership goes to Nellie Cox, @clarenellie
