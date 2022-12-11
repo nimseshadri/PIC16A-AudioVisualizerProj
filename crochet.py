@@ -199,7 +199,7 @@ def print_colnames(viz):
     '''
     Prints the column names for the input to choose from
     Args:
-        - viz: 
+        - viz: instance of the CrochetDataViz class
     Returns:
         - None
 
@@ -211,20 +211,22 @@ def runner(viz, func):
     '''
     Function to run the 
     Args:
-        - viz:
+        - viz: instance of CrochetDataVisualizer
         - func: the method of CrochetDataVisualizer only accepts col names 
     Returns:
-        - 
+        - None 
+    Raises:
+        - KeyError if the input words do not match possible column names/can't be validated
     '''
     print("Choose some column names (case sensitive). Enter 1-2 inputs, separate with spaces. Inputs correspond to (x,y) respectively. ")
     while True:
-        try:
-            colnames = input(input_sym).split()
-            func(*colnames)
+        try: 
+            colnames = input(input_sym).split() # first try to read each word separated with a space as a column name
+            func(*colnames) # then put the column names into the method for validating
             return
-        except KeyError:
+        except KeyError: # if not, except KeyError
             print("Please give valid column names:")
-            print_colnames(viz)
+            print_colnames(viz) # prints the column names to choose from
     
 def main():
     '''
@@ -234,8 +236,10 @@ def main():
     Returns:
         - None
     '''
-    dataviz = CrochetDataVisualizer(pd.read_csv("Clare Cox Crochet Social Media Data - Instagram Data.csv"))
+    # creates the instance 
+    dataviz = CrochetDataVisualizer(pd.read_csv("Clare Cox Crochet Social Media Data - Instagram Data.csv")) 
     
+    # creates welcome message
     welcome = """
     Welcome to the plotter!
     Choose a number from this menu:
