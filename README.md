@@ -38,6 +38,7 @@ Additionally, this tool is intended to observe relationships in the data recorde
 The following links were referenced to inform coding the implementation of the topic each covered 
  - User input tutorial: https://pynative.com/python-input-function-get-user-input/
  - Decorator documentation: https://peps.python.org/pep-0318/
+ - Functools documentation: https://docs.python.org/3/library/functools.html
  - Dataset credit and ownership goes to Nellie Cox, @clarenellie
 
 ### Background of Dataset 
