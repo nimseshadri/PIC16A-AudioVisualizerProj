@@ -34,7 +34,27 @@ This program has a limited scope as it was specifically designed to be able to w
 
 Additionally, this tool is intended to observe relationships in the data recorded, rather than concretely make conclusions about causality. Possible extensions for the program: creating and implementing a class ot fit the best model for the inputted variables, functions to display statistical calculations (e.g., correlation coefficient).  
 
-### References and Acknoledgement 
+### MIT License
+Copyright (c) 2022 @ubpollack, @nimdseshadri, @clarenellie
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+### References and Acknowledgement 
 The following links were referenced to inform coding the implementation of the topic each covered 
  - User input tutorial: https://pynative.com/python-input-function-get-user-input/
  - Decorator documentation: https://peps.python.org/pep-0318/
@@ -43,6 +63,3 @@ The following links were referenced to inform coding the implementation of the t
 
 ### Background of Dataset 
 This data was hand-collected over the course of 3 years by Nellie Cox. Everytime she created a post on the business account @clarecox.crochet, she hand-recorded all relevant information to describe the post, such as date posted, the type of item featured, likes received, comments, saves, etc. This amounted to a total of 19 recorded variables/columns, which turned into 17 possible variables within the scope of this program after servicing the data. 
-
-### Software demo video: 
-Extra credit video demoing use of this program
