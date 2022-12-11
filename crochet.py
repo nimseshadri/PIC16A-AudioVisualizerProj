@@ -67,7 +67,7 @@ class CrochetDataVisualizer:
         
         return df
     
-    def _validate_columns(self, *cols):
+    def validate_columns(self, *cols):
         """
         Validates column names
         Args:
@@ -94,7 +94,7 @@ class CrochetDataVisualizer:
         """
         @wraps(func) 
         def ret_func(self, *pos, **kw): # creates a function that can be applied to each plotting method 
-            self._validate_columns(*pos) 
+            self.validate_columns(*pos) 
             return func(self, *pos, **kw)
         return ret_func
         
