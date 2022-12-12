@@ -74,3 +74,6 @@ The following links were referenced to inform coding the implementation of the t
 
 ### Background of Dataset 
 This data was hand-collected over the course of 3 years by Nellie Cox. Everytime she created a post on the business account @clarecox.crochet, she hand-recorded all relevant information to describe the post, such as date posted, the type of item featured, likes received, comments, saves, etc. This amounted to a total of 19 recorded variables/columns, which turned into 17 possible variables within the scope of this program after servicing the data. 
+
+## Extra Credit Demo Video
+This is all 3 of us demoing executing the program and using the data vizualizer tool:
