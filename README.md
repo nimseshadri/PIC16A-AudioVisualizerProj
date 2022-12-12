@@ -29,6 +29,13 @@ Though there are ideal variables to be used in each kind of visualization, there
 
 To execute this program, all that needs to be done is first import the .py file containing the code with command 'import crochet' and then call the main function with '.' method notation: 'crochet.main()'; this will then initiate the program and cause the welcome prompt to appear. In the case that the tool needs to be started again—such as if 0 is entered into the main menu, quitting the tool, or if an error is generated which halts the programx—then calling the main function as specified in a new code cell can be used to launch the visualizer again.
 
+![likes predicting comments](https://user-images.githubusercontent.com/115330254/206945782-585f6627-a385-4058-912c-5f5671298b5a.jpg)
+Here is an 
+
+![TypeError from too many args](https://user-images.githubusercontent.com/115330254/206945799-5ed5ff67-5dac-421c-9981-82cdfa8be91c.jpg)
+This is an example of the type of error that would be generated if too many or not enough column names are entered to be plotted onto the chosen visualization.
+
+
 ### Scope and Limitations
 This program has a limited scope as it was specifically designed to be able to work with a single dataframe which was provided by group member @clarenellie. The program is able to analyze social media data for a microbusiness which sells and posts about crochet items. The program will not provide very specific insights for an individuals personal account but it may do a good job for data from another business account, assuming the dataframe is formatted the same as the Clare Cox Crochet Social Media dataframe the program was designed for. 
 
