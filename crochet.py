@@ -94,9 +94,9 @@ class CrochetDataVisualizer:
         """
         @wraps(func) 
         def ret_func(self, *pos, **kw): # creates a function that can be applied to each plotting method 
-            self.validate_columns(*pos) 
-            return func(self, *pos, **kw)
-        return ret_func
+            self.validate_columns(*pos) # specifies that validate_columns should only accept col names as positional args 
+            return func(self, *pos, **kw) # re-returns the og function 
+        return ret_func 
         
     @validate_column_dec
     def scatterplot(self, x, y):
