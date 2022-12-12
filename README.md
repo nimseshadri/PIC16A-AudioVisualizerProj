@@ -1,6 +1,6 @@
 # PIC16A-ClareCoxCrochetDataAnalysis
  
-## Group members: @ubpollack, @nimdseshadri, @clarenellie
+## Group members: @ubpollack, @nimseshadri, @clarenellie
 
 ### Project Description
 In this project, we created a data visualizer tool that takes in user input to first select a type of visualization and has the user to input the variables which will be plotted on the chosen visualization. We constructed this program/tool around data from one of our members Nellie's micro crochet business on instagram, in which she had recorded the relevant variables of each post she created from over 3 years ago.
