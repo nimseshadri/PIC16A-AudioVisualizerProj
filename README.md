@@ -21,7 +21,7 @@ Each vizualization can either take one or two variables (defined as the column n
 To specify, 
 - The scatterplot intakes 2 variable arguments, ideally both of quantitative (numeric) nature
 - The timeline takes 1 variable argument and plots it's behavior over the recorded years
-- The histogram can take 2 variable arguments, ideally x being categorical and y quantitative
+- The histogram can take 2 variable arguments, ideally x and y both quantitative
 - The boxplot takes 2 variable arguments, ideally x an y are quantitative 
 - The barplot (bar chart) takes 2 variable arguments, ideally a categorical x and quantitative y 
 
