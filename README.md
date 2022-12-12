@@ -82,3 +82,8 @@ This data was hand-collected over the course of 3 years by Nellie Cox. Everytime
 
 ## Extra Credit Demo Video
 This is all 3 of us demoing executing the program and using the data vizualizer tool:
+
+
+https://user-images.githubusercontent.com/114253680/206961818-17d03a8b-259e-4e0e-872c-c47504c2f171.mov
+
+For the purpose of this video, crochetchartedits.py is the same file as crochet.py
