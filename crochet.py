@@ -163,7 +163,7 @@ class CrochetDataVisualizer:
             - a boxplot with minimum, first quartile, median, third quartile, and maximum of inputted data
         """
         if groups is not None: # groups data that is not included in preprocessing code
-            self._validate_columns(groups) 
+            self.validate_columns(groups) 
             labs, boxes = zip(*((group, df[y]) for group, df in self.df.groupby(groups))) 
             plt.boxplot(boxes,labels=labs) # creates boxes with labels for groups
             plt.xlabel(groups) # labels graph with said groups
