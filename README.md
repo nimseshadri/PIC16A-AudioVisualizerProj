@@ -33,6 +33,7 @@ To execute this program, all that needs to be done is first import the .py file 
 Here is an 
 
 
+
 <img width="400" alt="Screen Shot 2022-12-11 at 6 06 59 PM" src="https://user-images.githubusercontent.com/115330254/206946285-191e3841-7175-4211-b0e2-76e459924f0e.png">
 This is an example of the type of error that would be generated if too many or not enough column names are entered to be plotted onto the chosen visualization. As mentioned, this would inquire relauching the tool in a new code cell.
 
